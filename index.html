@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = es>
+<head>
+  <title>Pedido de Pizzas</title>
+</head>
+<body> 
+    
+    <h1 id="estado"></h1>  
+    <form id="formulario">
+    <h2>Orden de venta</h2>
+      <label for="name">Nombre:.</label>
+      <input type="text" id="name" name="name" required minlength = "3" maxlength="15"><br>
+      <br>
+      <label for="fecha">Fecha:....</label>
+      <input type="date"  id="fecha" name="fecha" required minlength = "3" maxlength="6"><br>
+      
+    <h2>Pedido de Pizzas</h2>
+        <label for="pizza1">Pizza 1:</label>
+        <select id="pizza1" name="pizza1">
+      <option value="Mexicana">Mexicana ($10)</option>
+      <option value="Pepperoni">Pepperoni ($12)</option>
+      <option value="Hawaiana">Hawaiana ($11)</option>
+    </select>
+    <br><br>
+        <label for="pizza2">Pizza 2:</label>
+        <select id="pizza2" name="pizza2">
+      <option value="Mexicana">Mexicana ($10)</option>
+      <option value="Pepperoni">Pepperoni ($12)</option>
+      <option value="Hawaiana">Hawaiana ($11)</option>
+    </select>
+    <br><br>
+        <label for="pizza3">Pizza 3:</label>
+        <select id="pizza3" name="pizza3">
+      <option value="Mexicana">Mexicana ($10)</option>
+      <option value="Pepperoni">Pepperoni ($12)</option>
+      <option value="Hawaiana">Hawaiana ($11)</option>
+    </select>
+    <br><br>
+    <h2>Complementos</h2>
+        <h4 style="display: inline">Queso Extra</h4>
+        <input type="checkbox" name="QuesoExt" id="QuesoExt">
+      
+        <h4 style="display: inline">Refresco</h4>
+        <input type="checkbox" name="refresco" id="refresco">
+      
+        <h4 style="display: inline">Orilla de Queso</h4>
+        <input type="checkbox" name="OrQueso" id="OrQueso">
+      
+        <h4 style="display: inline">Papas</h4>
+        <input type="checkbox" name="Papas" id="Papas">
+      <h2>Metodo de entrega</h2>
+        <h4 style="display: inline">Consumo local</h4>
+        <input type="radio" name="ConsLocal" id="ConsLocal">
+      
+        <h4 style="display: inline">Envio a domicilio</h4>
+        <input type="radio" name="Envio" id="Envio">
+      <br><br>
+        <p id="total"></p>
+       <a href="direccion.html" target="_self" onclick="guardarComida()">Siguiente</a><br><br>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+    </head>
+    <body>
+        <h2>Pago</h2>
+          <form id="direccion" style="display: table-caption">
+              <label for="n-tarjeta">Numero de Tarjeta</label>
+              <input type="number" id="n-tarjeta" name="n-tajeta" required minlength = "16" maxlength="16"><br><br>
+              <label for="fecha-exp">Fecha de expiracion</label>
+              <input type="date" id="fecha-exp" name="fecha-exp"><br><br>
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" required minlength = "3" maxlength="15"><br><br>
+
+            <a href="ticket.html" target="_self" onclick="guardarPago()">Generar Ticket</a><br><br>
+            <a href="direccion.html" target="_self">regresar</a>
+        
+        </form>
+    </body>
+</html>  

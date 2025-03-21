@@ -1,0 +1,12 @@
+.title {
+    color: green;
+}
+.est{
+    display: flexbox;
+}
+.boton{
+    padding: 30px;
+    background-color: beige;
+    display: block;
+    color: purple;
+}
